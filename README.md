@@ -23,7 +23,8 @@ The official Pacman BattleRoyale cocktail game cabinet uses [namco system 147 ha
 ## Usage:
 
 - Buy 4 usb SNES controllers from china on ebay (should be 3$ each with shipping)
-- Configure all 4 players inputs (with x360ce): each player needs up, down, left, right and A button (A button is used as start button ingame)
+- Extract the latest PACBRCADE release archive to your Pacman Museum installation folder.
+- Configure all 4 players inputs (with x360ce.exe): each player needs up, down, left, right and A button (A button is used as start button ingame)
 - Configure player 1 X and B buttons: X opens config menu (for setting round number, speed, etc) (menu works only during title screen) and B button exits this menu
 - Run using RUNME.exe (which is the compiled RUNME.ahk script)
 
