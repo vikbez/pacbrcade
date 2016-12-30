@@ -30,7 +30,7 @@ The official Pacman BattleRoyale cocktail game cabinet uses [namco system 147 ha
 
 ## Non-rotated version (aka Deluxe (upright) version):
 
-- rename d3d9-norotate.png to d3d9.dll
+- rename d3d9-norotate.dll to d3d9.dll
 - rename loading-norotate.png to loading.png
 
 ## Known bugs / todo:
