@@ -11,17 +11,17 @@ Run, PACMuseum.exe, %A_WorkingDir%
 
 ; skip intro, select and launch Pacman Battleroyale
 Sleep 3000
-Send {z}
+Send {z}{w}
 Sleep 5500
-Send {z}
-Sleep 200
+Send {z}{w}
+Sleep 250
 Send {Right}
 Sleep 200
 Loop, 4 {
 	Send {Up}
 	Sleep 100
 }
-Send {z}
+Send {z}{w}
 
 ; unmute
 Sleep 500
@@ -36,7 +36,7 @@ while WinExist("ahk_class PACMuseum") {
 		FileDelete skip_save_popup
 		; mute volume so we do not hear the "ting" when we press A
 		Send {Volume_Mute}
-		Send {z}
+		Send {z}{w}
 		Sleep 400
 		Send {Volume_Mute}
 	}
