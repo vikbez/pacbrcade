@@ -37,6 +37,7 @@ The official Pacman BattleRoyale cocktail game cabinet uses [namco system 147 ha
 
 - Find a way to open the service menu: if you use a disassembler on PACMuseum.exe, you will see that the arcade menu stuff is in here. I don't know how to do this.
 - Sometimes you may get an achievement when launching pacman museum, stopping the auto selection of the game. You will then have to navigate in the menus to launch BattleRoyale with player 1 controls.
+- If you have multiple screens, this may crash at launch !
 
 ## Credits
 
