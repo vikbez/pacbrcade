@@ -35,10 +35,12 @@ while WinExist("ahk_class PACMuseum") {
 	if FileExist("skip_save_popup") {
 		FileDelete skip_save_popup
 		; mute volume so we do not hear the "ting" when we press A
-		Send {Volume_Mute}
+		; this is commented because sometimes the Volume_Mute command does
+		; random things as "menu open" button in game
+		; Send {Volume_Mute}
 		Send {z}{w}
 		Sleep 400
-		Send {Volume_Mute}
+		; Send {Volume_Mute}
 	}
 	Sleep 500
 }
