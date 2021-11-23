@@ -4,6 +4,9 @@
 
 This is a mod for having a Pacman BattleRoyale game that is like it's arcade version. Based on Pacman Museum (PC version).
 
+## THIS PROJECT IS ARCHIVED
+[Please look here](http://www.emuline.org/topic/1252-tuto-ameliorations-pac-man-battle-royale/) for a more-up-to date patch !
+
 From this:
 ![before](/assets/before.jpg)
 
