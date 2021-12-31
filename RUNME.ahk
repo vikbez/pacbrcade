@@ -7,17 +7,24 @@ FileDelete skip_save_popup
 
 ; mute sound during boot
 Send {Volume_Mute}
-Run, PACMuseum.exe, %A_WorkingDir%
+; running the exe directly results in "Steam must be running to play this game" we must launch thru steam url now
+; also noted in shaolindrunkard's issue from Feb2017 -- http://forum.arcadecontrols.com/index.php?topic=147402.0
+; Run, PACMuseum.exe, %A_WorkingDir% 
+Run, steam://rungameid/236470, %A_WorkingDir%
 
 ; skip intro, select and launch Pacman Battleroyale
-Sleep 3000
-Send {z}{w}
-Sleep 5500
-Send {z}{w}
-Sleep 250
-Send {Right}
+; timings have changed just a bit
+Sleep 3000   ; wait for game load
+Send {z}{w}  ; skip bandi screen
+Sleep 5500   ; wait for intro animation
+Send {z}{w}  ; ok at title screen
+Sleep 1000   ; wait for dlc popup to draw
+Send {z}{w}  ; mrs pacman dlc skip
+Sleep 1000   ; wait for dlc popup to undraw
+Send {Right} ; move into games and pick battle-royle
 Sleep 200
-Loop, 4 {
+; only 3 up, not 4.  the game order may have changed in latest version
+Loop, 3 {
 	Send {Up}
 	Sleep 100
 }
